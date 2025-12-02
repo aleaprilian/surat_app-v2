@@ -2,7 +2,8 @@ import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../App.jsx';
 
-const API_URL = 'http://localhost:5000/api/surat';
+// const API_URL = 'http://localhost:5000/api/surat';
+const API_URL = import.meta.env.VITE_API_URL + '/api/surat';
 
 const FormSection = ({ title, children }) => (
   <div className="p-6 bg-white rounded-lg shadow-md">

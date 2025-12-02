@@ -3,6 +3,8 @@ import { AuthContext } from '../App.jsx';
 import { supabase } from '../supabaseClient.js';
 import { useSearchParams } from 'react-router-dom';
 
+const API_URL = import.meta.env.VITE_API_URL + '/api/surat';
+
 // --- Helper Status Badge ---
 const StatusBadge = ({ status }) => {
   let style = "bg-gray-100 text-gray-600";
